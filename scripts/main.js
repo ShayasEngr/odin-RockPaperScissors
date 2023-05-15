@@ -25,3 +25,37 @@ function getPlayerChoice() {
         return getPlayerChoice();
     }
 }
+
+// Function to Play 1 Round
+function playRound(player, computer) {
+    //Get Value form GET Func
+    if (player == computer) {
+        playerScore += 0;
+        computerScore += 0;
+        return "Player Selected: " + player + " | Computer Selected: " + computer + "\n" + "It's a TIE \n" + "Player Score: " + playerScore + " | Computer Score: " + computerScore;
+    } else if (player == "ROCK" && computer == "PAPER") {
+        playerScore += 0;
+        computerScore += 1;
+        return "Player Selected: " + player + " | Computer Selected: " + computer + "\n" + "Player Lost and Computer Wins \n" + "Player Score: " + playerScore + " | Computer Score: " + computerScore;
+    } else if (player == "ROCK" && computer == "SCISSORS") {
+        playerScore += 1;
+        computerScore += 0;
+        return "Player Selected: " + player + " | Computer Selected: " + computer + "\n" + "Player Wins and Computer Lost \n" + "Player Score: " + playerScore + " | Computer Score: " + computerScore;
+    } else if (player == "PAPER" && computer == "ROCK") {
+        playerScore += 1;
+        computerScore += 0;
+        return "Player Selected: " + player + " | Computer Selected: " + computer + "\n" + "Player Wins and Computer Lost \n" + "Player Score: " + playerScore + " | Computer Score: " + computerScore;
+    } else if (player == "PAPER" && computer == "SCISSORS") {
+        playerScore += 0;
+        computerScore += 1;
+        return "Player Selected: " + player + " | Computer Selected: " + computer + "\n" + "Player Lost and Computer Wins \n" + "Player Score: " + playerScore + " | Computer Score: " + computerScore;
+    } else if (player == "SCISSORS" && computer == "ROCK") {
+        playerScore += 0;
+        computerScore += 1;
+        return "Player Selected: " + player + " | Computer Selected: " + computer + "\n" + "Player Lost and Computer Wins \n" + "Player Score: " + playerScore + " | Computer Score: " + computerScore;
+    } else if (player == "SCISSORS" && computer == "PAPER") {
+        playerScore += 1;
+        computerScore += 0;
+        return "Player Selected: " + player + " | Computer Selected: " + computer + "\n" + "Player Wins and Computer Lost \n" + "Player Score: " + playerScore + " | Computer Score: " + computerScore;
+    }
+}
