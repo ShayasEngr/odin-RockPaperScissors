@@ -59,3 +59,9 @@ function playRound(player, computer) {
         return "Player Selected: " + player + " | Computer Selected: " + computer + "\n" + "Player Wins and Computer Lost \n" + "Player Score: " + playerScore + " | Computer Score: " + computerScore;
     }
 }
+function game() {
+    // Loop to Play Game i times
+    for (let i = 0; i < 5; i++) {
+        console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    }
+}
