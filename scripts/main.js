@@ -65,3 +65,14 @@ function game() {
         console.log(playRound(getPlayerChoice(), getComputerChoice()));
     }
 }
+// Invoke Game
+game();
+
+// Declare Game Winner
+if (playerScore == computerScore) {
+    console.log("GAMER IS DRAWWW.........");
+} else if (playerScore > computerScore) {
+    console.log("Player Wins The GAME..........");
+} else {
+    console.log("Computer Wins the GAME..........");
+}
