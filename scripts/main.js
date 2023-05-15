@@ -1,0 +1,1 @@
+console.log("ROCK | PAPER | SCISSORS");
